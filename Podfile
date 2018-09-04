@@ -55,12 +55,17 @@ def shared_pods
   pod 'SwiftLint', :configurations => ['Debug']
   pod 'FLEX', '~> 2.0', :configurations => ['Debug', 'Beta']
 
+  # QA
+  pod 'Lookback'
+
   # Diffing
   diff_pods
 end
 
 target 'Rocket.Chat.ShareExtension' do
   pod 'Nuke-FLAnimatedImage-Plugin'
+  pod 'Lookback'
+
   database_pods
   ui_pods
   diff_pods

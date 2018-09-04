@@ -16,8 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var notificationWindow: TransparentToTouchesWindow?
 
+    var participate = LookbackParticipate() // 1
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Launcher().prepareToLaunch(with: launchOptions)
+
+        participate.setup(withApplicationWindow: self.window!) // 2
 
         PushManager.setupNotificationCenter()
         application.registerForRemoteNotifications()
@@ -98,7 +102,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         }
 
-        return false
+       return participate.startParticipation(from: url) // 3
     }
 
     // MARK: Remote Notification

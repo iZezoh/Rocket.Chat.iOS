@@ -52,6 +52,15 @@ PODS:
   - "GoogleUtilities/NSData+zlib (5.2.2)"
   - GoogleUtilities/Reachability (5.2.2):
     - GoogleUtilities/Logger
+  - Lookback (2.9.0):
+    - Lookback/Live (= 2.9.0)
+    - Lookback/SelfTest (= 2.9.0)
+  - Lookback/Live (2.9.0):
+    - Lookback/SelfTest
+    - LookbackWebRTC (= 21258.0.1)
+    - SocketRocket_Lookback (~> 0.5.2)
+  - Lookback/SelfTest (2.9.0)
+  - LookbackWebRTC (21258.0.1)
   - MBProgressHUD (1.1.0)
   - MobilePlayer (1.2.0)
   - nanopb (0.3.8):
@@ -75,6 +84,7 @@ PODS:
   - SimpleImageViewer (1.2.0):
     - FLAnimatedImage
   - SlackTextViewController (1.9.6)
+  - SocketRocket_Lookback (0.5.2)
   - Starscream (2.1.1)
   - SwiftLint (0.27.0)
   - SwiftyJSON (4.1.0)
@@ -87,6 +97,7 @@ DEPENDENCIES:
   - Fabric
   - Firebase/Core
   - FLEX (~> 2.0)
+  - Lookback
   - MBProgressHUD (~> 1.1.0)
   - MobilePlayer (from `https://github.com/RocketChat/RCiOSMobilePlayer`)
   - Nuke (~> 7.3)
@@ -117,6 +128,8 @@ SPEC REPOS:
     - FLEX
     - GoogleAppMeasurement
     - GoogleUtilities
+    - Lookback
+    - LookbackWebRTC
     - MBProgressHUD
     - nanopb
     - Nuke
@@ -126,6 +139,7 @@ SPEC REPOS:
     - Realm
     - RealmSwift
     - semver
+    - SocketRocket_Lookback
     - Starscream
     - SwiftLint
     - SwiftyJSON
@@ -168,6 +182,8 @@ SPEC CHECKSUMS:
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   GoogleAppMeasurement: f7507b39b70ad0bd80b3d81518b2f43868974307
   GoogleUtilities: 06b66f9567769a7958db20a92f0128b2843e49d5
+  Lookback: 9065a82cfa0d3cfe2490a57e1f65cb2317318d04
+  LookbackWebRTC: ab5d60c26ffaa5fe6a11392af0a82c8cb9516938
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MobilePlayer: 069b13482499f14c25b6ce53f63a91e17975b073
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
@@ -181,11 +197,12 @@ SPEC CHECKSUMS:
   semver: 11ae3bc4a6036efbc86b5863ef5fa32c065c8bbd
   SimpleImageViewer: 6ed0d2acf7c166a5b4e795bccc7b9ea1b225ff9b
   SlackTextViewController: b854e62c1c156336bc4fd409c6ca79b5773e8f9d
+  SocketRocket_Lookback: d65f6e4f53a8f502dea5c04b3968871d16ddfe3f
   Starscream: 142bd8ef24592d985daee9fa48c936070b85b15f
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   SwipeCellKit: cee9906e6d3a36e22ad1a852fba7f8fa0839d113
 
-PODFILE CHECKSUM: 6702db159e15966472657eea05905247ba9622d9
+PODFILE CHECKSUM: a64d18cc3f38cce7245178ea2654425d26189cf6
 
 COCOAPODS: 1.5.3

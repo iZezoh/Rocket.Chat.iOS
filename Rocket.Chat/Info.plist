@@ -217,12 +217,19 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>rocketchat</string>
+				<string>lookback-ios-1</string>
 				<string>com.googleusercontent.apps.662030055877-9qc3lqsbgif4k1ktl89dqeaec3m163i4</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array/>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>210</string>
+	<string>211</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
