@@ -7,8 +7,27 @@
 //
 
 import UIKit
+import DifferenceKit
 import RocketChatViewController
 
 class NewChatViewController: RocketChatViewController {
 
+}
+
+struct MessageSectionController: ChatSection {
+    var object: AnyDifferentiable
+
+    func viewModels() -> [AnyChatItem] {
+        return [AnyChatItem]()
+    }
+
+    func cell(for viewModel: AnyChatItem, on collectionView: UICollectionView, at indexPath: IndexPath) -> ChatCell {
+        return MyChatCell()
+    }
+}
+
+class MyChatCell: UICollectionViewCell, ChatCell {
+    func bind(viewModel: AnyChatItem) {
+
+    }
 }
